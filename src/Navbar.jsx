@@ -1,0 +1,34 @@
+import React from 'react'
+import {NavLink} from 'react-router-dom'
+
+export const Navbar = () => {
+  return (
+    <>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container">
+  <NavLink to ="/Product" >
+    <img src="data:image/png;base64,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" alt=""/>
+   </NavLink>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      </ul>
+      <form class="d-flex">
+      
+      
+      
+      <li  className="nav-item btn-outline-primary" style={{listStyleType:"none" ,padding :"10px 10px",  }}>
+          <NavLink activeClassName='menu_active' exact className="nav-link" to="/Addproduct">
+         Addproduct
+          </NavLink>
+        </li>
+      </form>
+    </div>
+  </div>
+</nav>
+    </>
+  )
+}
+export default Navbar;
